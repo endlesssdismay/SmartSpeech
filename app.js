@@ -1,6 +1,6 @@
 const SUPABASE_URL = 'https://kazyasykjhmrjmiuheez.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imthenlhc3lramhtcmptaXVoZWV6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0MzIwMzQsImV4cCI6MjA5MjAwODAzNH0.WcFsFmHaQZswRLT1uw2g1RGRxI3vFYFCcFHXiTUctpY';
-const sb = supabase.createClient('https://kazyasykjhmrjmiuheez.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imthenlhc3lramhtcmptaXVoZWV6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0MzIwMzQsImV4cCI6MjA5MjAwODAzNH0.WcFsFmHaQZswRLT1uw2g1RGRxI3vFYFCcFHXiTUctpY');
+const SUPABASE_KEY = 'sb_publishable_LI-oMCtz7RS_U1EtXlrOwA_TSiBr-XA';
+const sb = supabase.createClient('https://kazyasykjhmrjmiuheez.supabase.co', 'sb_publishable_LI-oMCtz7RS_U1EtXlrOwA_TSiBr-XA');
 const texts = ['Hello', 'Good morning', 'Thank you', 'Practice every day'];
 let current = 'Hello';
 
