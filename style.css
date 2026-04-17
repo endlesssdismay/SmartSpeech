@@ -1,0 +1,38 @@
+body{
+  margin:0;font-family:Arial;background:#f4f7fb;color:#222
+}
+
+header{
+  display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#58cc02;color:#fff
+}
+
+nav button{
+  margin-left:8px
+}
+
+button,input{
+  padding:10px;border-radius:10px;border:1px solid #ccc
+}
+
+button{background:#1cb0f6;color:#fff;border:none
+}
+
+main{
+  padding:20px
+}
+
+.page{
+  display:none
+}
+
+.page.active{
+  display:block
+}
+
+.card{
+  max-width:700px;margin:auto;background:#fff;padding:24px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
+
+#leaders .row{
+  display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee
+}

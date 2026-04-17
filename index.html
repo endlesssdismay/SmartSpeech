@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Smart Speech</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	</head>
+  
+	<body>
+		<header><h1>Smart Speech</h1>
+			<nav>				
+				<button onclick="show('home')">Home</button>
+				<button onclick="show('practice')">Practice</button>
+				<button onclick="show('leaderboard')">Leaderboard</button>
+				<button onclick="show('dashboard')">Dashboard</button>
+				<button onclick="logout()">Logout</button>
+			</nav>
+		</header>
+
+    <main>    
+      <section id="auth" class="page active">
+        <div class="card">				
+          <h2>Login / Register</h2>
+          <input id="name" placeholder="Full Name">
+          <input id="section" placeholder="Section">
+          <input id="email" placeholder="Email">
+          <input id="password" type="password" placeholder="Password">
+          <button onclick="register()">Register</button>
+          <button onclick="login()">Login</button>
+        </div>
+      </section>
+
+      <section id="home" class="page">
+        <div class="card">
+          <h2>Welcome</h2>
+          <p>AI pronunciation trainer.</p>
+        </div>
+      </section>
+
+      <section id="practice" class="page">
+        <div class="card">
+          <h2>Practice</h2>
+          <p id="target">Hello</p>
+          <button onclick="nextText()">Generate</button>
+          <button onclick="speak()">Listen</button><button onclick="recognize()">Speak</button>
+          <div id="result"></div>
+        </div>
+      </section>
+
+      <section id="leaderboard" class="page">
+        <div class="card">
+          <h2>Leaderboard</h2>
+          <div id="leaders">
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboard" class="page">
+        <div class="card">
+          <h2>Your Stats</h2>
+          <div id="stats"></div>
+        </div>
+      </section>
+
+    </main>
+		<script src="app.js"></script>
+	</body>
+</html>
